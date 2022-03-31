@@ -810,6 +810,7 @@ nav button{
 
 .phone {
     display: flex;
+    align-items: center;
 }
 
 .location{
@@ -859,17 +860,35 @@ nav button{
 }
 
 
-.coordinators{
+/* .coordinators{
     display: flex;
     gap: 100px;
     justify-content: space-around;
     grid-template-columns: 2, 1fr;
+} */
+
+.staffs{
+    display: flex;
+    align-items: center;
+    text-align: center;
+
 }
+
+
 
 .coordinators h4{
     font-weight: 900;
     text-transform: uppercase;
     color: cyan;
+}
+
+@media(max-width: 950px){
+    .students{
+        margin: 60px;
+        /* text-align: center; */
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
 }
                                                     /* scroll btn */
 .scroll-up-btn{
