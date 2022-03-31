@@ -19,6 +19,12 @@ font-family: 'Nosifer', cursive;
 font-family: 'Poppins', sans-serif;
 
 font-family: 'Ubuntu', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather+Sans:wght@300;400&family=Nosifer&family=Poppins:ital,wght@0,400;0,500;0,600;1,700&family=Ubuntu:wght@400;500;700&family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Lobster&family=Merriweather+Sans:wght@300;400&family=Nosifer&family=Poppins:ital,wght@0,400;0,500;0,600;1,700&family=Ubuntu:wght@400;500;700&family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Lobster&family=Merriweather+Sans:wght@300;400&family=Montserrat:wght@600;700&family=Nosifer&family=Poppins:ital,wght@0,400;0,500;0,600;1,700&family=Ubuntu:wght@400;500;700&family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
 body{
     font-family: 'Merriweather Sans', sans-serif;
 }
@@ -91,23 +97,23 @@ nav a:hover{
     height: 50px;
 }
 
-.nav-item li a:hover{
+li a:hover{
     color: black;
 }
 
 
 .navbar.sticky{
-    background-color: rgba(48, 51, 235, 0.747);
+    background-color: #023d8ab7;
     transition:  0.9s ;
 }
 
 .navbar.sticky .navbar-brand  {
-    color: black;
+    color: white;
     transition:  0.9s ;
 }
 
 .navbar.sticky .navbar-brand span{
-    color: #fff;
+    /* color: #fff; */
     transition:  0.9s ;
 }
 
@@ -115,48 +121,86 @@ nav a:hover{
     color: black;
 }
 
+.navbar-brand svg{
+    height: 50px;
+    /* fill-opacity: inherit; */
+    fill: cyan;
+}
+
+
+
+.navbar-brand{
+    display: flex;
+    gap: 10px;
+
+}
+
+.navbar-brand{
+    text-align: center;
+}
+
+.navbar-brand .conference{
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    font-family: 'Fredericka the Great', cursive;
+
+}
+
+.navbar-brand .slogan{
+    font-size: 17px;
+    font-weight: bolder;
+    color: cyan;
+}
+
+
+
+                                                            /* home  */
 .home-img img{
     width: 80vw;
 }
 
-.home-heading{
-    text-align: center;
-}
+
 
 .home-img img{
     margin-top: 30%;
 }
-@media (max-width: 991px){
-    .navbar-brand{
-        margin-left: 0px;
-    }
-    .navbar ul{
-        /* padding: 100px; */
-        text-align: center;
-        margin-left: 0;
-        /* height:fit-content; */
-        /* width:100vw; */
-        background-color: rgba(0, 0, 0, 0.671);
-        /* background-size: cover; */
-        /* padding-left: 100px; */
-    }
-    .navbar li{
-        /* margin: 0 auto; */
-        /* margin-top: 50px; */
-        margin-right: 100px;
-    }
-    
-    .navbar li a:hover{
-        color: crimson;
-    }
-    
-    .navbar.sticky ul li a:hover{
-        color: crimson;
-    }
-    
-    
+
+.home-heading h1{
+    font-size: 100px;
+    font-weight: bolder;
+    background-color: cyan;
+    text-decoration: double;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Abril Fatface', cursive; */
+
 }
 
+.home-heading{
+    text-align: center;
+    padding-top:15% ;
+}
+
+.home-text .college{
+    font-size: 45px;
+    font-weight: bolder;
+    word-spacing: 20px;
+    /* color: #f72585; */
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+    /* background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%); */
+    /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% ); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home-text {
+    font-size: 30px;
+    font-weight: bolder;
+    word-spacing: 20px;
+    color: rgb(223, 221, 222);
+}
 
 @media (min-width: 743px){
     .home .home-heading .home-img img{
@@ -166,12 +210,12 @@ nav a:hover{
     }
 }
 
-/* @media (max-width: 500px){
+@media (max-width: 500px){
     .home .home-heading .home-img img{
         padding-top: 20%;
         width: 100vw;
     }
-} */
+}
 
 nav button{
     border: 2px solid blue;
@@ -207,24 +251,6 @@ nav button{
     }
 }
 
-
-.home-text .college{
-    font-size: 40px;
-    font-weight: 900;
-    word-spacing: 20px;
-    color: black;
-    /* background: linear-gradient(to right, rgb(238, 13, 182), rgb(158, 7, 7));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-}
-
-.home-text {
-    font-size: 30px;
-    font-weight: 900;
-    word-spacing: 20px;
-    color: rgb(243, 9, 204);
-}
-
 .reg{
     text-align: center;
     margin-top: 20px;
@@ -241,6 +267,45 @@ nav button{
 }
 
 
+@media (max-width: 991px){
+    .navbar-brand{
+        margin-left: 0px;
+    }
+    .navbar ul{
+        /* padding: 100px; */
+        text-align: center;
+        margin-left: 0;
+        /* height:fit-content; */
+        /* width:100vw; */
+        background-color: rgba(0, 0, 0, 0.671);
+        /* background-size: cover; */
+        /* padding-left: 100px; */
+    }
+    .navbar li{
+        /* margin: 0 auto; */
+        /* margin-top: 50px; */
+        margin-right: 100px;
+    }
+    
+    .navbar li a:hover{
+        color: crimson;
+    }
+    
+    .navbar.sticky ul li a:hover{
+        color: crimson;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
 
 
                                         /* events  */
@@ -248,7 +313,8 @@ nav button{
                                         /* technical events */
 
 .heading{
-    background-color: rgba(51, 51, 51, 0.418);
+    /* background-color: rgba(51, 51, 51, 0.418); */
+    background-color: #023e8a;
     color: #fff;
 }
 .tech{
@@ -274,12 +340,13 @@ nav button{
 }  */
 .card{
     text-align: center;
+    
     /* border: inset; */
 }
 
 .card svg{
     height: 100px;
-    fill: aqua;
+    fill: #023e8a;
     margin: 0 auto;
     margin-top: 10px;
     width: fit-content;
@@ -296,6 +363,45 @@ nav button{
     font-weight: bolder;
 }
 
+
+.col{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* .row {
+    margin-top: 50px;
+} */
+
+                                                                            /* card hover  */
+
+.tech .card{
+    color: #023e8a;
+}
+
+
+
+.tech .card:hover{
+    color: #fff;
+    background-color: #023e8a;
+    fill: #fff;
+    box-shadow: 2px 2px 10px white;
+    transition: 0.5s;
+    /* height: 50px; */
+   
+}
+
+.tech .card:hover .card-body{
+    border-top: 2px solid #fff;
+}
+
+
+.tech .card:hover svg{
+    fill: #fff;
+    transition: 0.3s;
+
+}
 
 
                                                    
@@ -355,42 +461,7 @@ nav button{
 } */
 
 
-.col{
-    display: flex;
-    justify-content: space-around;
-}
 
-
-/* .row {
-    margin-top: 50px;
-} */
-
-                                                                            /* card hover  */
-
-.tech .card{
-    color: black;
-}
-
-.tech .card:hover{
-    color: #fff;
-    background-color: rgb(248, 9, 216);
-    fill: #fff;
-    box-shadow: 2px 2px 10px rgb(7, 23, 246);
-    transition: 0.5s;
-    /* height: 50px; */
-   
-}
-
-.tech .card:hover .card-body{
-    margin-top: 2px solid #fff;
-}
-
-
-.tech .card:hover svg{
-    fill: #fff;
-    transition: 0.3s;
-
-}
 
 
 
@@ -411,14 +482,16 @@ nav button{
 }
 
 
-.card{
+.non-tech .card{
     text-align: center;
+    color: white;
+    background-color: #023e8a;
     /* border: inset; */
 }
 
 .non-tech .card svg{
     height: 100px;
-    fill: rgb(248, 9, 216);
+    fill: white;
     margin: 0 auto;
     margin-top: 10px;
     width: fit-content;
@@ -426,7 +499,7 @@ nav button{
 }
 
 .non-tech  .card-body{
-    border-top: 2px solid black ;
+    border-top: 2px solid white ;
 }
 
 .non-tech .card .card-title{
@@ -438,6 +511,49 @@ nav button{
 
 
                                                     /* card hover  */
+
+                                                    
+.col{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* .row {
+    margin-top: 50px;
+} */
+
+/* .non-tech .card:hover{
+    color: #023e8a;
+    background-color: white;
+    fill: #fff;
+    box-shadow: 2px 2px 10px rgb(68, 150, 243);
+
+} */
+
+.non-tech .card:hover .card-body{
+    border-top: 2px solid #023e8a;
+}
+
+.non-tech .card:hover{
+    color: #023e8a;
+    background-color:white;
+    box-shadow: 2px 2px 10px #023e8a;
+    transition: 0.5s;
+    /* height: 50px; */
+   
+}
+
+.non-tech .card:hover .card-body{
+    margin-top: 2px solid #fff;
+}
+
+
+.non-tech .card:hover svg{
+    fill: #023e8a;
+    transition: 0.3s;
+
+}
 
  /* .non-tech{
     background-color: rgb(243, 88, 184);
@@ -493,51 +609,6 @@ nav button{
 
 
 
-.col{
-    display: flex;
-    justify-content: space-around;
-}
-
-
-/* .row {
-    margin-top: 50px;
-} */
-
-.non-tech .card:hover{
-    color: #fff;
-    background-color: rgb(56, 217, 238);
-    fill: #fff;
-    box-shadow: 2px 2px 10px rgb(68, 150, 243);
-    /* height: 50px; */
-   
-}
-
-
-.non-tech .card:hover svg{
-    fill: #fff;
-}
-
-
-.non-tech .card:hover{
-    color: #fff;
-    background-color: rgb(61, 179, 248);
-    fill: #fff;
-    box-shadow: 2px 2px 10px rgb(247, 4, 206);
-    transition: 0.5s;
-    /* height: 50px; */
-   
-}
-
-.non-tech .card:hover .card-body{
-    margin-top: 2px solid #fff;
-}
-
-
-.non-tech .card:hover svg{
-    fill: #fff;
-    transition: 0.3s;
-
-}
 
 
 
@@ -547,7 +618,13 @@ nav button{
 
 .enroll{
     margin-top: 100px;
-    background-color: rgb(243, 18, 18);
+    /* background-color: rgb(243, 18, 18); */
+    /* background-color: #023e8a; */
+}
+
+.enroll .description{
+    color: #023e8a;
+    font-weight: bold;
 }
 
 .enroll-content{
@@ -556,6 +633,14 @@ nav button{
 
 .enroll .card{
     text-align: center;
+}
+
+/* .description{
+    border-left: 2px solid #023e8a;
+} */
+
+.card-body{
+    /* border: 5px solid black; */
 }
 
 .enroll .card-body h2{
@@ -570,13 +655,18 @@ nav button{
 
 .enroll .price{
     margin-top: 30px;
-    background-color: darkviolet;
-    color: #fff;
+    background-color: white;
+    color: #023e8a;
+    font-weight: bolder;
     padding: 10px 0;
     border-radius: 10px;
 }
 
 .date-fee span{
+    font-weight: bolder;
+}
+
+.date-fee p{
     font-weight: bolder;
 }
 
@@ -588,7 +678,7 @@ nav button{
 }
 
 .greet p{
-    color: #333;
+    color: white;
 }
 
 .enroll{
@@ -597,11 +687,15 @@ nav button{
 }
 
 .enroll .card{
-    background-color: bisque;
+    background-color: #023e8a;
+}
+.enroll{
+    color: white;
 }
 
 
-            /* contact sectin  */
+
+                                            /* contact sectin  */
 
 .contact{
     margin-top: 20px;
@@ -623,8 +717,9 @@ nav button{
 }
 
 .contact-all{
-    color: yellow;
+    color: white;
     font-size: 20px;
+    font-weight: 500;
 }
 
 .contact-all> div{
@@ -635,7 +730,7 @@ nav button{
 
 .contact-all svg{
     height: 50px;
-    fill: #fff;
+    fill: yellow;
     size: 50px;
     margin-right: 10px;
 }
@@ -655,11 +750,11 @@ nav button{
 
 .contact{
     /* background: linear-gradient(to right, blue, rgb(71, 148, 219), blue); */
-    background-color: blue;
+    background-color: #023e8a;
 }
 
 .contact svg:hover {
-    fill: #333;
+    fill: white;
 }
 
 .queries{
@@ -669,7 +764,7 @@ nav button{
 .thankyou{
     font-size: 35px;
     font-weight: bolder;
-    color: yellow;
+    color: white;
     text-align: center;
     margin-top: 20px;
     border-bottom: 2px solid yellow;
