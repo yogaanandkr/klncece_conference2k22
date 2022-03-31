@@ -112,6 +112,22 @@ li a:hover{
     transition:  0.9s ;
 }
 
+.navbar.sticky .navbar-brand svg{
+    fill: white;
+    transition: 0.3s;
+}
+
+.navbar.sticky .navbar-brand .slogan{
+    color: white;
+    transition: 0.3s;
+}
+
+.navbar.sticky .navbar-brand .conference{
+    color: cyan;
+    transition: 0.3s;
+
+}
+
 .navbar.sticky .navbar-brand span{
     /* color: #fff; */
     transition:  0.9s ;
@@ -141,6 +157,7 @@ li a:hover{
 
 .navbar-brand .conference{
     font-size: 24px;
+    color: white;
     font-weight: 900;
     letter-spacing: 5px;
     font-family: 'Fredericka the Great', cursive;
@@ -230,8 +247,13 @@ nav button{
     nav button{
         /* width: 10%; */
         position: fixed;
-        top: 0;
+        top: -1;
         right: 0;
+    }
+
+    .home-heading h1{
+        /* font-size: 50px; */
+        padding-top: 40%;
     }
 }
 
@@ -240,6 +262,11 @@ nav button{
         width: 100vw;
         height: 60px;
         margin-top: 40%;
+    }
+
+    .home-heading h1{
+        font-size: 50px;
+        padding-top: 20%;
     }
 }
 
