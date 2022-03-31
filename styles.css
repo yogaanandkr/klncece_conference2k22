@@ -137,6 +137,13 @@ li a:hover{
     color: black;
 }
 
+.navbar svg{
+    fill: white;
+}
+
+
+
+
 .navbar-brand svg{
     height: 50px;
     /* fill-opacity: inherit; */
@@ -168,6 +175,45 @@ li a:hover{
     font-size: 17px;
     font-weight: bolder;
     color: cyan;
+}
+
+@media (max-width:500px){
+    .navbar-brand .conference{
+        font-size: 22px;
+    }
+}
+
+
+
+@media (max-width: 991px){
+    .navbar-brand{
+        margin-left: 0px;
+    }
+    .navbar ul{
+        /* padding: 100px; */
+        text-align: center;
+        margin-left: 0;
+        /* height:fit-content; */
+        /* width:100vw; */
+        background-color: #023d8ab5;
+        /* background-size: cover; */
+        /* padding-left: 100px; */
+    }
+    .navbar li{
+        /* margin: 0 auto; */
+        /* margin-top: 50px; */
+        margin-right: 100px;
+    }
+    
+    .navbar li a:hover{
+        color: crimson;
+    }
+    
+    .navbar.sticky ul li a:hover{
+        color: crimson;
+    }
+    
+    
 }
 
 
@@ -294,36 +340,6 @@ nav button{
 }
 
 
-@media (max-width: 991px){
-    .navbar-brand{
-        margin-left: 0px;
-    }
-    .navbar ul{
-        /* padding: 100px; */
-        text-align: center;
-        margin-left: 0;
-        /* height:fit-content; */
-        /* width:100vw; */
-        background-color: rgba(0, 0, 0, 0.671);
-        /* background-size: cover; */
-        /* padding-left: 100px; */
-    }
-    .navbar li{
-        /* margin: 0 auto; */
-        /* margin-top: 50px; */
-        margin-right: 100px;
-    }
-    
-    .navbar li a:hover{
-        color: crimson;
-    }
-    
-    .navbar.sticky ul li a:hover{
-        color: crimson;
-    }
-    
-    
-}
 
 
 
