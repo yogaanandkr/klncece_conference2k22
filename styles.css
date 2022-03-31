@@ -598,7 +598,8 @@ nav button{
     position: absolute;
     top: 0;
     left: 0;
-    background: url(https://images.unsplash.com/flagged/photo-1580234759288-fbf3ccdd9a06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80);
+    background: url(https://images.unsplash.com/photo-1580327344181-c1163234e5a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80);
+    /* background: url(https://images.unsplash.com/flagged/photo-1580234759288-fbf3ccdd9a06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80); */
     background-size: cover;
     background: -webkit-linear-gradient(to left, #fb8fe0, #4e54c8);
     width: 100%;
