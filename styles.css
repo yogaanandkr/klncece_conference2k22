@@ -357,7 +357,7 @@ nav button{
 
 .heading{
     /* background-color: rgba(51, 51, 51, 0.418); */
-    background-color: #023e8a;
+    background-color: #023d8a;
     color: #fff;
 }
 .tech{
@@ -421,13 +421,15 @@ nav button{
 
 .tech .card{
     color: #023e8a;
+    background: linear-gradient(to bottom, cyan, white, cyan);
 }
 
 
 
 .tech .card:hover{
     color: #fff;
-    background-color: #023e8a;
+    /* background-color: #023e8a; */
+    background: linear-gradient(to bottom, #023e8a, cyan, #023e8a);
     fill: #fff;
     box-shadow: 2px 2px 10px white;
     transition: 0.5s;
@@ -504,7 +506,10 @@ nav button{
 } */
 
 
-
+.card:hover .card-text{
+    font-weight: 500px;
+    font-weight: bolder;
+}
 
 
 
@@ -520,15 +525,22 @@ nav button{
 }
 
 
+
 .non-tech-heading{
     margin-bottom: 50px;
 }
+
+/* .non-tech .heading{
+    color: #023d8a;
+    background-color: rgba(255, 255, 255, 0.536);
+} */
 
 
 .non-tech .card{
     text-align: center;
     color: white;
-    background-color: #023e8a;
+    background: linear-gradient(to bottom, #023e8a, cyan, #023e8a);
+    transition: 0.5s;
     /* border: inset; */
 }
 
@@ -580,9 +592,10 @@ nav button{
 
 .non-tech .card:hover{
     color: #023e8a;
-    background-color:white;
+    /* background-color: #023d8a; */
+    background: linear-gradient(to bottom, cyan, white, cyan);
     box-shadow: 2px 2px 10px #023e8a;
-    transition: 0.5s;
+    transition: 0.6s;
     /* height: 50px; */
    
 }
