@@ -813,9 +813,12 @@ nav button {
   color: cyan;
 }
 
+.students {
+  margin-bottom: 21px;
+}
 @media (max-width: 950px) {
   .students {
-    margin: 60px;
+    margin-left: 60px;
     /* text-align: center; */
     /* justify-content: center; */
     /* align-items: center; */
