@@ -1112,3 +1112,80 @@ body {
 .design:hover ul {
   display: block;
 }
+
+/* .glow-on-hover {
+  animation: slideme 0.7s ease-in;
+}
+
+.card {
+  animation: slideme 0.7s ease-in;
+}
+
+@keyframes slideme {
+  0% {
+    transform: skewX(53deg) translateX(-500px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(0px);
+  }
+  62% {
+    transform: skewX(0deg) translateX(30px);
+  }
+  70% {
+    transform: skewX(-20deg);
+    opacity: 1;
+  }
+  80% {
+    transform: skewX(0deg) translateX(0);
+  }
+  90% {
+    transform: skewX(-5deg);
+  }
+  100% {
+    transform: skewX(0deg);
+  }
+} */
+
+/* slideleft */
+
+.ani {
+  visibility: hidden;
+  visibility: visible\9; /*For old IE browsers IE6-8 */
+}
+.ani.slide {
+  visibility: visible;
+  animation: slide 1s;
+}
+.ani::after {
+  /* useful when its child elements are float:left; */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@keyframes slide {
+  0% {
+    transform: skewX(53deg) translateX(-500px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(0px);
+  }
+  62% {
+    transform: skewX(0deg) translateX(30px);
+  }
+  70% {
+    transform: skewX(-20deg);
+    opacity: 1;
+  }
+  80% {
+    transform: skewX(0deg) translateX(0);
+  }
+  90% {
+    transform: skewX(-5deg);
+  }
+  100% {
+    transform: skewX(0deg);
+  }
+}
