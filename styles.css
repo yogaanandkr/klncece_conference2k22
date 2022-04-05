@@ -322,15 +322,25 @@ nav button {
 
 /* technical events */
 
+.tech-heading {
+  text-align: center;
+  font-size: 20px;
+}
+
 .heading {
   /* background-color: rgba(51, 51, 51, 0.418); */
   background-color: #023d8a;
   font-size: 1px;
   color: cyan;
 }
-.tech {
+
+.card-title {
   text-align: center;
+}
+.tech {
+  /* text-align: center; */
   margin-top: 50px;
+  /* margin-bottom: 100px; */
   /* height: 100vh; */
 }
 
@@ -348,15 +358,15 @@ nav button {
     column-gap: 100px;
     
 }  */
-.card {
-  text-align: center;
 
-  /* border: inset; */
+.card {
+  display: grid;
 }
 
 .card svg {
   height: 100px;
-  fill: #023e8a;
+  /* fill: #023e8a; */
+  fill: #fff;
   margin: 0 auto;
   margin-top: 10px;
   width: fit-content;
@@ -385,14 +395,19 @@ nav button {
 /* card hover  */
 
 .tech .card {
-  color: #023e8a;
-  background: linear-gradient(to bottom, cyan, white, cyan);
+  color: #fff;
+  /* background: linear-gradient(to bottom, cyan, white, cyan); */
+  background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+  border-radius: 20px;
+  box-shadow: 0 6px 4px -5px #515151;
 }
 
 .tech .card:hover {
-  color: #fff;
+  /* color: #fff; */
+  color: #023e8a;
   /* background-color: #023e8a; */
-  background: linear-gradient(to bottom, #023e8a, cyan, #023e8a);
+  /* background: linear-gradient(to bottom, #023e8a, cyan, #023e8a); */
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
   fill: #fff;
   box-shadow: 2px 2px 10px white;
   transition: 0.5s;
@@ -404,7 +419,8 @@ nav button {
 }
 
 .tech .card:hover svg {
-  fill: #fff;
+  /* fill: #fff; */
+  fill: #023e8a;
   transition: 0.3s;
 }
 
@@ -469,7 +485,11 @@ nav button {
 /* non tech  */
 .non-tech {
   text-align: center;
-  margin-top: 150px;
+  /* margin-top: 150px; */
+}
+
+.non-tech p {
+  /* text-align: end; */
 }
 
 .non-tech-content h1 {
@@ -490,6 +510,8 @@ nav button {
   color: white;
   background: linear-gradient(to bottom, #023e8a, cyan, #023e8a);
   transition: 0.5s;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px white;
   /* border: inset; */
 }
 
@@ -880,15 +902,213 @@ body {
 @media screen and (min-width: 1000px) {
   .tech {
     /* background: lightblue; */
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
   }
 
   .non-tech {
     /* background: lightblue; */
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
   }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
   /* Styles */
+}
+.project-contest:hover {
+  transform: translateY(-50px);
+}
+.project-contest p {
+  display: none;
+}
+.project-contest {
+  height: fit-content;
+}
+
+.project-contest ul {
+  display: none;
+}
+
+.project-contest:hover p {
+  display: block;
+}
+
+.project-contest:hover ul {
+  display: block;
+}
+
+/* ==== */
+.quiz:hover {
+  transform: translateY(-50px);
+}
+.quiz p {
+  display: none;
+}
+
+.quiz {
+  height: fit-content;
+}
+
+.quiz ul {
+  display: none;
+}
+
+.quiz:hover p {
+  display: block;
+}
+
+.quiz:hover ul {
+  display: block;
+}
+
+/* ===== */
+.codathon {
+  height: fit-content;
+}
+
+.codathon:hover {
+  transform: translateY(-50px);
+}
+.codathon p {
+  display: none;
+}
+
+.codathon ul {
+  display: none;
+}
+
+.codathon:hover p {
+  display: block;
+}
+
+.codathon:hover ul {
+  display: block;
+}
+
+/* ===== */
+
+.design {
+  height: fit-content;
+}
+
+.design:hover {
+  transform: translateY(-50px);
+}
+
+.design p {
+  display: none;
+}
+
+.design ul {
+  display: none;
+}
+
+.design:hover p {
+  display: block;
+}
+
+.design:hover ul {
+  display: block;
+}
+
+/* ================================ */
+
+/* ===== */
+
+.connect {
+  height: fit-content;
+}
+
+.connect:hover {
+  transform: translateY(-50px);
+}
+
+.connect p {
+  display: none;
+}
+
+.connect ul {
+  display: none;
+}
+
+.connect:hover p {
+  display: block;
+}
+
+.connect:hover ul {
+  display: block;
+}
+/* ===== */
+
+.memory {
+  height: fit-content;
+}
+
+.memory:hover {
+  transform: translateY(-50px);
+}
+
+.memory p {
+  display: none;
+}
+
+.memory ul {
+  display: none;
+}
+
+.memory:hover p {
+  display: block;
+}
+
+.memory:hover ul {
+  display: block;
+}
+/* ===== */
+
+.jam {
+  height: fit-content;
+}
+
+.jam:hover {
+  transform: translateY(-50px);
+}
+
+.jam p {
+  display: none;
+}
+
+.jam ul {
+  display: none;
+}
+
+.jam:hover p {
+  display: block;
+}
+
+.jam:hover ul {
+  display: block;
+}
+/* ===== */
+
+.design {
+  height: fit-content;
+}
+
+.design:hover {
+  transform: translateY(-50px);
+}
+
+.design p {
+  display: none;
+}
+
+.design ul {
+  display: none;
+}
+
+.design:hover p {
+  display: block;
+}
+
+.design:hover ul {
+  display: block;
 }
