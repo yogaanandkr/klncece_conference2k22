@@ -232,6 +232,7 @@ li a:hover {
   /* color: #f72585; */
   background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
   /* background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%); */
+  /* background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%); */
   /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% ); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -240,7 +241,7 @@ li a:hover {
 .home-text {
   font-size: 30px;
   font-weight: bolder;
-  word-spacing: 20px;
+  word-spacing: 2px;
   color: rgb(223, 221, 222);
 }
 
@@ -359,6 +360,22 @@ nav button {
     
 }  */
 
+.star {
+  font-size: 20px;
+  margin-left: 35%;
+  list-style-type: none;
+}
+
+.twothree {
+  color: red;
+  font-size: 15px;
+}
+
+.four {
+  color: yellow;
+  font-size: 15px;
+}
+
 .card {
   display: grid;
 }
@@ -441,11 +458,11 @@ nav button {
   position: absolute;
   top: 0;
   left: 0;
-  background: url(https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1120&q=80);
+  background: url(https://images.unsplash.com/photo-1597733336794-12d05021d510?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
   background-size: cover;
   background: -webkit-linear-gradient(to left, #fb8fe0, #4e54c8);
   width: 100%;
-  height: 100vh;
+  height: 115vh;
   opacity: 0.6;
   z-index: -1;
 }
@@ -485,13 +502,22 @@ nav button {
   position: relative;
 } */
 
-.card:hover {
+.tech .card:hover {
   /* position: absolute; */
+  /* z-index: 1; */
+  /* margin: 0 auto; */
+  /* padding-bottom: 100px; */
+}
+
+.non-tech .card:hover {
+  /* position: absolute; */
+  /* z-index: 1; */
+  /* padding-bottom: 100px; */
 }
 
 /* non tech  */
 .non-tech {
-  text-align: center;
+  /* text-align: center; */
   /* margin-top: 150px; */
 }
 
@@ -513,7 +539,7 @@ nav button {
 } */
 
 .non-tech .card {
-  text-align: center;
+  /* text-align: center; */
   color: white;
   /* background: linear-gradient(to bottom, #023e8a, cyan, #023e8a); */
   background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
@@ -592,7 +618,7 @@ nav button {
 
 .non-tech {
   position: relative;
-  margin-bottom: 150px;
+  /* margin-bottom: 150px; */
 }
 
 .non-tech::after {
