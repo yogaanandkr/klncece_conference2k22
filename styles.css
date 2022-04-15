@@ -467,6 +467,8 @@ nav button {
   z-index: -1;
 }
 
+/* @media (min-width:1300px) */
+
 /* @media (max-width: 743px){
     .tech{
         background-color: lightblue;
@@ -498,32 +500,6 @@ nav button {
   font-weight: 500px;
   font-weight: bolder;
 }
-/* .tech {
-  position: relative;
-} */
-
-.tech .card:hover {
-  /* position: absolute; */
-  /* z-index: 1; */
-  /* margin: 0 auto; */
-  /* padding-bottom: 100px; */
-}
-
-.non-tech .card:hover {
-  /* position: absolute; */
-  /* z-index: 1; */
-  /* padding-bottom: 100px; */
-}
-
-/* non tech  */
-.non-tech {
-  /* text-align: center; */
-  /* margin-top: 150px; */
-}
-
-.non-tech p {
-  /* text-align: end; */
-}
 
 .non-tech-content h1 {
   font-weight: bolder;
@@ -532,11 +508,6 @@ nav button {
 .non-tech-heading {
   margin-bottom: 50px;
 }
-
-/* .non-tech .heading{
-    color: #023d8a;
-    background-color: rgba(255, 255, 255, 0.536);
-} */
 
 .non-tech .card {
   /* text-align: center; */
@@ -663,6 +634,15 @@ nav button {
     }
 } */
 
+@media (min-width: 1000px) {
+  .tech .card:hover,
+  .non-tech .card:hover {
+    position: absolute;
+    z-index: 1;
+    /* display: none; */
+  }
+}
+
 /* enroll section  */
 
 .enroll {
@@ -751,6 +731,10 @@ nav button {
   height: 30px;
 }
 
+.clkhere {
+  color: cyan;
+}
+
 /* contact sectin  */
 
 .contact {
@@ -797,7 +781,7 @@ nav button {
 
 .phone {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .location {
@@ -854,8 +838,8 @@ nav button {
 
 .staffs {
   display: flex;
-  align-items: center;
-  justify-self: center;
+  /* align-items: center; */
+  /* justify-self: center ; */
   /* text-align: center; */
 }
 
